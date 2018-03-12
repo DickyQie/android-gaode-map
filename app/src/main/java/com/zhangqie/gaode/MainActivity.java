@@ -11,6 +11,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.zhangqie.gaode.ui.basic.LocationActivity;
+import com.zhangqie.gaode.ui.polyline.PolylineActivity;
+import com.zhangqie.gaode.ui.route.RouteActivity;
 
 
 /**
@@ -22,7 +24,8 @@ import com.zhangqie.gaode.ui.basic.LocationActivity;
 public class MainActivity extends AppCompatActivity {
 
     private static final String[] strList =new  String[]{
-            "定位数据，显示地图，标注位置"
+            "定位数据，显示地图，标注位置","两点绘制路线",
+            "多点绘制路线"
     };
 
 
@@ -51,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
         switch (index){
             case 0:
                 startActivity(new Intent(MainActivity.this,LocationActivity.class));
+                break;
+            case 1:
+                startActivity(new Intent(MainActivity.this,RouteActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(MainActivity.this,PolylineActivity.class));
                 break;
         }
     }

@@ -37,6 +37,8 @@
 
 
         <activity android:name=".ui.basic.LocationActivity"/>
+        <activity android:name=".ui.route.RouteActivity"/>
+        <activity android:name=".ui.polyline.PolylineActivity"/>
     </application>
 
 </manifest>
